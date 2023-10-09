@@ -13,8 +13,10 @@
 /*restaurants*/
 
 .section-restaurants {
+    @include display-flex-column;
     background-color: $colorGrey;
     padding: 54px 20px 66px 20px;
+    gap: 20px;
     
     img {
         height: 231px;
@@ -28,4 +30,15 @@
     @include display-grid;
     grid-template-columns: 1fr;
     gap: 18px;
+}
+
+.div-infos-restaurant {
+    @include display-flex-row;
+    justify-content: space-between;
+    padding: 13px 33px 12px 16px;
+    align-items: center;
+}
+
+.h3-margin {
+    margin-bottom: 5px;
 }

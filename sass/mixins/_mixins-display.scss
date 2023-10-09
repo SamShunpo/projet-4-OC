@@ -1,11 +1,13 @@
 /* flex */
 
-@mixin display-flex {
+@mixin display-flex-column {
     display: flex;
+    flex-direction: column;
 }
 
-@mixin flex-column {
-    flex-direction: column;
+@mixin display-flex-row{
+    display: flex;
+    flex-direction: row;
 }
 
 /* grid */

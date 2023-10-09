@@ -10,8 +10,7 @@ footer {
 }
 
 .div-column{
-    @include display-flex;
-    @include flex-column;
+    @include display-flex-column;
     gap: 7px;
     width: 190px;
 }
