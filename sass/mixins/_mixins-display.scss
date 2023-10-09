@@ -1,7 +1,15 @@
+/* flex */
+
 @mixin display-flex {
     display: flex;
 }
 
 @mixin flex-column {
     flex-direction: column;
+}
+
+/* grid */
+
+@mixin display-grid {
+    display: grid;
 }

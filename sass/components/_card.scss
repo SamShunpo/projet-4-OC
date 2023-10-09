@@ -1,0 +1,5 @@
+.card {
+    background-color: $colorWhite;
+    border-radius: 15px;
+    @include shadow
+}
