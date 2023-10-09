@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"home.css"}
+{"version":3,"sourceRoot":"","sources":["../../../sass/utils/_general.scss","../../../sass/components/_footer.scss","../../../sass/utils/_variables.scss","../../../sass/mixins/_mixins-flex.scss","../../../sass/mixins/_mixins-font.scss","../../../sass/mixins/_mixins-margin.scss"],"names":[],"mappings":"AAAA;EACI;EACA;;;AAGJ;EACI;;;ACNJ;EACI,kBCCa;EDAb,OCFS;EDGT;;AAEA;EACI,OCNK;EDOL;;;AAIR;EEVI;EAIA;EFSA;EACA;;;AAGJ;EGjBI;EAIA;ECJA;EJqBA;;;AAGJ;EACI;EACA","file":"home.css"}

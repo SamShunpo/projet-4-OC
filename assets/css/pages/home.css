@@ -1,3 +1,39 @@
+body, html {
+  margin: 0;
+  padding: 0;
+}
 
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+footer {
+  background-color: #353535;
+  color: white;
+  padding: 22px 25px 22px 25px;
+}
+footer footer, footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.div-column {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  width: 190px;
+}
+
+.logo {
+  font-family: "Shrikhand", cursive;
+  font-size: 18px;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.icon-footer {
+  width: 12px;
+  margin-right: 10px;
+}
 
 /*# sourceMappingURL=home.css.map */

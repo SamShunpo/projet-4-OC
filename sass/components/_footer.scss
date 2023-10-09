@@ -1,0 +1,30 @@
+footer {
+    background-color: $colorGreyBlack;
+    color: $colorWhite;
+    padding: 22px 25px 22px 25px;
+
+    footer, a {
+        color: $colorWhite;
+        text-decoration: none;
+    }
+}
+
+.div-column{
+    @include display-flex;
+    @include flex-column;
+    gap: 7px;
+    width: 190px;
+}
+
+.logo {
+    @include shrikhand;
+    @include font-size-18px;
+    @include margin-0;
+    margin-bottom: 16px;
+}
+
+.icon-footer{
+    width: 12px;
+    margin-right: 10px;
+}
+
