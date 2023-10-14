@@ -81,14 +81,29 @@ footer footer, footer a {
   height: 72px;
   border-radius: 20px;
 }
-.section-fonctionnement__grid-fonctionnement__div-etape__number {
+.section-fonctionnement__grid-fonctionnement__div-etape__bloc-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   position: absolute;
+  left: -10px;
+  width: 300px;
+  justify-content: space-between;
+}
+.section-fonctionnement__grid-fonctionnement__div-etape__bloc-info__number {
+  display: flex;
+  flex-direction: column;
   width: 24px;
   height: 24px;
   background-color: #9356DC;
   border-radius: 300px;
   color: white;
-  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-fonctionnement h2 {
+  margin-bottom: 26px;
 }
 
 /*restaurants*/

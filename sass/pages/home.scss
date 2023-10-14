@@ -28,17 +28,31 @@
             height: 72px;
             border-radius: 20px;
 
-            &__number{
+            &__bloc-info{
+                @include display-flex-row;
+                align-items: center;
                 position: absolute;
-                width: 24px;
-                height: 24px;
-                background-color: $primaryColor;
-                border-radius: 300px;
-                color: $colorWhite;
-                text-align: center;
+                left: -10px;
+                width: 300px;
+                justify-content: space-between;
+
+                &__number{
+                    @include display-flex-column;
+                    width: 24px;
+                    height: 24px;
+                    background-color: $primaryColor;
+                    border-radius: 300px;
+                    color: $colorWhite;
+                    align-items: center;
+                    justify-content: center;
+                }
             }
         }
     }
+}
+
+.section-fonctionnement h2 {
+    margin-bottom: 26px;
 }
 
 /*restaurants*/
