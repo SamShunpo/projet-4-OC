@@ -10,6 +10,43 @@
 @import "../components/main-button";
 @import "../components/card";
 
+
+/* location */
+
+.section-location {
+    @include display-flex-row;
+    height: 50px;
+    background-color: $colorGrey;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+/* Hero */
+
+.section-hero {
+    @include display-flex-column;
+    padding: 39px 30px 57px 30px;
+    background-color: $colorGreyPrincipal;
+    align-items: center;
+
+    &__text {
+        text-align: center;
+        margin-bottom: 27px;
+    }
+
+    &__button {
+        height: 50px;
+        width: 218px;
+        background: linear-gradient($secondaryColor, $primaryColor);
+        color: $colorWhite;
+        border-radius: 25px;
+        border-style: none;
+    }
+
+}
+
 .section-fonctionnement {
     padding: 48px 20px 68px 20px;
 
