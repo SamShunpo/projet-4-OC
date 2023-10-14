@@ -56,6 +56,19 @@ footer footer, footer a {
   margin-right: 10px;
 }
 
+.section-header {
+  display: flex;
+  flex-direction: row;
+  height: 63px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  align-items: center;
+  justify-content: center;
+}
+.section-header__logo {
+  width: 200px;
+  height: 36px;
+}
+
 .card {
   background-color: white;
   border-radius: 15px;

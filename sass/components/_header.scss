@@ -1,0 +1,13 @@
+.section-header {
+    @include display-flex-row;
+    height: 63px;
+    @include shadow-header;
+    align-items: center;
+    justify-content: center;
+    
+
+    &__logo{
+        width: 200px;
+        height: 36px;
+    }
+}
