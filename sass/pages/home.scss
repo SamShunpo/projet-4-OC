@@ -20,9 +20,16 @@
     background-color: $colorGrey;
     justify-content: center;
     align-items: center;
-    gap: 20px;
     position: relative;
     z-index: -1;
+
+    input {
+        background-color: $colorGrey;
+        border: none;
+        text-align: center;
+        font-weight: 500;
+        font-size: 16px;
+    }
 }
 
 
@@ -46,8 +53,11 @@
         color: $colorWhite;
         border-radius: 25px;
         border-style: none;
+        @include shadow-btn;
     }
 }
+
+/*fonctionnement*/
 
 .section-fonctionnement h2 {
     margin-bottom: 26px;
