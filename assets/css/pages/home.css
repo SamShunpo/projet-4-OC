@@ -148,10 +148,6 @@ footer .div-column__icon-footer {
   color: white;
   border-radius: 25px;
   border-style: none;
-  transition: background 200ms;
-}
-.section-hero__button:hover {
-  background: background-gradien;
 }
 
 .section-fonctionnement h2 {
