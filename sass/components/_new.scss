@@ -7,4 +7,5 @@
     background-color: $greenColor;
     color: $greenFontColor;
     font-weight: 500;
+    @include shadow-header;
 }
