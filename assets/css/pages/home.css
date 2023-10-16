@@ -151,19 +151,17 @@ footer .div-column__icon-footer {
 }
 
 /*fonctionnement*/
-.section-fonctionnement h2 {
-  margin-bottom: 26px;
-}
-
 .section-fonctionnement {
   padding: 48px 20px 68px 20px;
 }
-.section-fonctionnement__grid-fonctionnement {
+.section-fonctionnement h2 {
+  margin-bottom: 26px;
+}
+.section-fonctionnement .grid-fonctionnement {
   display: grid;
   gap: 20px;
 }
-
-.grid-fonctionnement__div-etape {
+.section-fonctionnement .div-etape {
   display: flex;
   flex-direction: row;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
@@ -175,8 +173,7 @@ footer .div-column__icon-footer {
   height: 72px;
   border-radius: 20px;
 }
-
-.div-etape__bloc-info {
+.section-fonctionnement .div-etape .bloc-info {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -186,8 +183,7 @@ footer .div-column__icon-footer {
   justify-content: left;
   gap: 10%;
 }
-
-.bloc-info__number {
+.section-fonctionnement .div-etape .bloc-info__number {
   display: flex;
   flex-direction: column;
   width: 24px;
@@ -198,12 +194,11 @@ footer .div-column__icon-footer {
   align-items: center;
   justify-content: center;
 }
-.bloc-info__icon {
+.section-fonctionnement .div-etape .bloc-info__icon {
   width: 25px;
   color: #7e7e7e;
 }
-
-#icon-purple {
+.section-fonctionnement .div-etape .bloc-info #icon-purple {
   color: #9356DC;
 }
 
