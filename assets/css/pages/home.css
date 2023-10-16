@@ -1,5 +1,6 @@
 /* flex */
 /* grid */
+/* inline-block */
 body, html {
   margin: 0;
   padding: 0;
@@ -42,6 +43,12 @@ footer h2 {
   margin-bottom: 16px;
   color: white;
   font-weight: 400;
+  width: 139px;
+}
+@media (min-width: 768px) {
+  footer h2 {
+    margin: 0;
+  }
 }
 footer a {
   color: white;
@@ -52,10 +59,34 @@ footer .div-column {
   gap: 7px;
   list-style: none;
   padding-inline-start: 0;
+  margin-block-end: 0;
+}
+footer .div-column .width-168 {
+  width: 168px;
+  display: inline-block;
+}
+footer .div-column .width-130 {
+  width: 130px;
+  display: inline-block;
 }
 footer .div-column__icon-footer {
   width: 12px;
   margin-right: 10px;
+}
+@media (min-width: 768px) {
+  footer .div-column {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media (min-width: 1024px) {
+  footer {
+    display: flex;
+    flex-direction: row;
+    flex-direction: row-reverse;
+    height: 114px;
+    align-items: end;
+  }
 }
 
 .section-header {
