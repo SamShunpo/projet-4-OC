@@ -9,26 +9,34 @@
 @import "../components/heart";
 @import "../components/main-button";
 @import "../components/card";
+@import "../components/new";
 
 
 /* location */
 
 .section-location {
-    @include display-flex-row;
+    @include display-flex();
     height: 50px;
     background-color: $colorGrey;
     justify-content: center;
     align-items: center;
-    gap: 20px;
     position: relative;
     z-index: -1;
+
+    input {
+        background-color: $colorGrey;
+        border: none;
+        text-align: center;
+        font-weight: 500;
+        font-size: 16px;
+    }
 }
 
 
 /* Hero */
 
 .section-hero {
-    @include display-flex-column;
+    @include display-flex(column);
     padding: 39px 30px 57px 30px;
     background-color: $colorGreyPrincipal;
     align-items: center;
@@ -45,7 +53,11 @@
         color: $colorWhite;
         border-radius: 25px;
         border-style: none;
+        @include shadow-btn;
+    }
 }
+
+/*fonctionnement*/
 
 .section-fonctionnement h2 {
     margin-bottom: 26px;
@@ -63,7 +75,7 @@
 .grid-fonctionnement {
 
     &__div-etape {
-        @include display-flex-row;
+        @include display-flex();
         @include shadow;
         position: relative;
         justify-content: space-around;
@@ -78,7 +90,7 @@
 .div-etape {
 
     &__bloc-info {
-        @include display-flex-row;
+        @include display-flex;
         align-items: center;
         position: absolute;
         left: -10px;
@@ -91,7 +103,7 @@
 .bloc-info {
 
     &__number {
-        @include display-flex-column;
+        @include display-flex(column);
         width: 24px;
         height: 24px;
         background-color: $primaryColor;
@@ -115,47 +127,17 @@
 /*restaurants*/
 
 .section-restaurants {
-    @include display-flex-column;
+    @include display-flex(column);
     background-color: $colorGreyPrincipal;
     padding: 54px 20px 66px 20px;
     gap: 20px;
-}
 
-.div-card-restaurants {
-    @include display-grid;
-    grid-template-columns: 1fr;
-    gap: 18px;
-}
-
-.div-card-restaurants img {
-    height: 231px;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 15px 15px 0 0;
-}
-
-.div-img {
-    position: relative;
-
-    &__span-tag {
-        position: absolute;
-        right: 20px;
-        top: 20px;
-        padding: 5px 20px 5px 20px;
-        border-radius: 2px;
-        background-color: $greenColor;
-        color: $greenFontColor;
-        font-weight: 500;
+    .div-bloc-restaurants {
+        @include display-grid;
+        grid-template-columns: 1fr;
+        gap: 18px;
     }
 }
 
-.div-infos-restaurant {
-    @include display-flex-row;
-    justify-content: space-between;
-    padding: 13px 33px 12px 16px;
-    align-items: center;
-}
 
-.div-infos-restaurant h3 {
-    margin-bottom: 5px;
-}
+

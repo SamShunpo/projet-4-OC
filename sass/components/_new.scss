@@ -1,0 +1,11 @@
+.new {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    padding: 5px 20px 5px 20px;
+    border-radius: 2px;
+    background-color: $greenColor;
+    color: $greenFontColor;
+    font-weight: 500;
+    @include shadow-header;
+}

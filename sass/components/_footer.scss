@@ -2,28 +2,31 @@ footer {
     background-color: $colorGreyBlack;
     color: $colorWhite;
     padding: 22px 25px 22px 25px;
-}
 
-footer > p {
-    @include shrikhand;
-    @include font-size-18px;
-    @include margin-0;
-    margin-bottom: 16px;
-    color: $colorWhite;
-}
+    h2 {
+        @include shrikhand;
+        @include font-size-18px;
+        @include margin-0;
+        margin-bottom: 16px;
+        color: $colorWhite;
+        font-weight: 400;
+    }
 
-footer a {
-    color: $colorWhite;
-}
+    a {
+        color: $colorWhite;
+    }
 
-.div-column{
-    @include display-flex-column;
-    gap: 7px;
-    width: 190px;
-
-    &__icon-footer{
-        width: 12px;
-        margin-right: 10px;
+    .div-column{
+        @include display-flex(column);
+        gap: 7px;
+        list-style: none;
+        padding-inline-start: 0;
+    
+        &__icon-footer{
+            width: 12px;
+            margin-right: 10px;
+        }
     }
 }
+
 
