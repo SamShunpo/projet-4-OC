@@ -12,8 +12,9 @@ footer {
         font-weight: 400;
         width: 139px;
 
-        @media (min-width: 768px) {
+        @media (min-width: 1024px) {
             margin: 0;
+            padding-bottom: 25px;
         }
     }
 
@@ -45,7 +46,8 @@ footer {
         }
 
         @media (min-width: 768px) {
-            @include display-flex; 
+            @include display-flex;
+            padding : 25px 0 25px 0;
         }
     }
 
