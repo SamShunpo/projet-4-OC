@@ -11,20 +11,23 @@ body, html {
 
 h2, h1 {
   margin: 0;
+  color: #000000;
 }
 
 h3 {
   margin: 0;
   font-weight: 700;
+  color: #000000;
 }
 
 p {
   margin: 0;
+  color: #000000;
 }
 
 a {
   text-decoration: none;
-  color: black;
+  color: #000000;
 }
 
 footer {
@@ -32,9 +35,17 @@ footer {
   color: white;
   padding: 22px 25px 22px 25px;
 }
-footer footer, footer a {
+
+footer > p {
+  font-family: "Shrikhand", cursive;
+  font-size: 18px;
+  margin: 0;
+  margin-bottom: 16px;
   color: white;
-  text-decoration: none;
+}
+
+footer a {
+  color: white;
 }
 
 .div-column {
@@ -43,15 +54,7 @@ footer footer, footer a {
   gap: 7px;
   width: 190px;
 }
-
-.logo {
-  font-family: "Shrikhand", cursive;
-  font-size: 18px;
-  margin: 0;
-  margin-bottom: 16px;
-}
-
-.icon-footer {
+.div-column__icon-footer {
   width: 12px;
   margin-right: 10px;
 }
@@ -109,6 +112,10 @@ footer footer, footer a {
   border-style: none;
 }
 
+.section-fonctionnement h2 {
+  margin-bottom: 26px;
+}
+
 .section-fonctionnement {
   padding: 48px 20px 68px 20px;
 }
@@ -116,7 +123,8 @@ footer footer, footer a {
   display: grid;
   gap: 20px;
 }
-.section-fonctionnement__grid-fonctionnement__div-etape {
+
+.grid-fonctionnement__div-etape {
   display: flex;
   flex-direction: row;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
@@ -128,16 +136,19 @@ footer footer, footer a {
   height: 72px;
   border-radius: 20px;
 }
-.section-fonctionnement__grid-fonctionnement__div-etape__bloc-info {
+
+.div-etape__bloc-info {
   display: flex;
   flex-direction: row;
   align-items: center;
   position: absolute;
   left: -10px;
-  width: 300px;
-  justify-content: space-between;
+  width: 100%;
+  justify-content: left;
+  gap: 10%;
 }
-.section-fonctionnement__grid-fonctionnement__div-etape__bloc-info__number {
+
+.bloc-info__number {
   display: flex;
   flex-direction: column;
   width: 24px;
@@ -148,9 +159,13 @@ footer footer, footer a {
   align-items: center;
   justify-content: center;
 }
+.bloc-info__icon {
+  width: 25px;
+  color: #7e7e7e;
+}
 
-.section-fonctionnement h2 {
-  margin-bottom: 26px;
+#icon-purple {
+  color: #9356DC;
 }
 
 /*restaurants*/

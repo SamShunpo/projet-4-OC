@@ -9,20 +9,23 @@ body,html {
 
 h2, h1 {
     @include margin-0;
+    color: $colorBlack;
 }
 
 h3 {
     @include margin-0;
     font-weight: 700;
+    color: $colorBlack;
 }
 
 p {
     @include margin-0;
+    color: $colorBlack;
 }
 
 a{
     text-decoration: none;
-    color: black;
+    color: $colorBlack;
 }
 
 

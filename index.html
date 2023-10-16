@@ -21,10 +21,10 @@
             <img class="section-header__logo" src="./assets/images/logo/ohmyfood.png" alt="logo noir de ohmyfood">
             </header>
             <main>
-                <section class="section-location"><!--localisation-->
+                <div class="section-location"><!--localisation-->
                     <i class="fa fa-location-dot fa-map-marker fa-lg" aria-hidden="true"></i>
                     <p>Paris, Belleville</p>
-                </section>
+                </div>
                 <section class="section-hero"> <!--Hero-->
                     <h1 class="section-hero__text">Réservez le menu qui vous convient</h1>
                     <p class="section-hero__text">Découvrez des restaurants d’exception, sélectionnés par nos soins.</p>
@@ -33,24 +33,24 @@
                 <section class="section-fonctionnement"><!--Fonctionnement-->
                     <h2>Fonctionnement</h2>
                     <div class="section-fonctionnement__grid-fonctionnement">
-                        <div class="section-fonctionnement__grid-fonctionnement__div-etape">
-                            <div class="section-fonctionnement__grid-fonctionnement__div-etape__bloc-info">
-                                <p class="section-fonctionnement__grid-fonctionnement__div-etape__bloc-info__number">1</p>
-                                <i class="fa-solid fa-mobile-screen-button fa-lg"></i>
+                        <div class="grid-fonctionnement__div-etape">
+                            <div class="div-etape__bloc-info">
+                                <p class="bloc-info__number">1</p>
+                                <i class="fa-solid fa-mobile-screen-button fa-lg bloc-info__icon"></i>
                                 <p>Choisissez un restaurant</p>
                             </div>
                         </div>
-                        <div class="section-fonctionnement__grid-fonctionnement__div-etape">
-                            <div class="section-fonctionnement__grid-fonctionnement__div-etape__bloc-info">
-                                <p class="section-fonctionnement__grid-fonctionnement__div-etape__bloc-info__number">2</p>
-                                <i class="fa-solid fa-list-ul fa-lg"></i>
+                        <div class="grid-fonctionnement__div-etape">
+                            <div class="div-etape__bloc-info">
+                                <p class="bloc-info__number">2</p>
+                                <i class="fa-solid fa-list-ul fa-lg bloc-info__icon"></i>
                                 <p>Composez votre menu</p>
                             </div>
                         </div>
-                        <div class="section-fonctionnement__grid-fonctionnement__div-etape">
-                            <div class="section-fonctionnement__grid-fonctionnement__div-etape__bloc-info">
-                                <p class="section-fonctionnement__grid-fonctionnement__div-etape__bloc-info__number">3</p>
-                                <i class="fa-sharp fa-solid fa-store fa-lg"></i>
+                        <div class="grid-fonctionnement__div-etape">
+                            <div class="div-etape__bloc-info">
+                                <p class="bloc-info__number">3</p>
+                                <i class="fa-sharp fa-solid fa-store fa-lg bloc-info__icon" id="icon-purple"></i>
                                 <p>Dégustez au restaurant</p>
                             </div>
                         </div>
@@ -102,7 +102,6 @@
                                 </div>
                             </article>
                         </a>
-                        </a>
                         <a href="#">
                             <article class="card">
                                 <img src="./assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="">
@@ -119,14 +118,14 @@
                 </section>
             </main>
             <footer>
-                <p class="logo">ohmyfood</p>
+                <p>ohmyfood</p>
                 <div class="div-column">
                     <div>
-                        <i class="fa-solid fa-utensils icon-footer"></i>
+                        <i class="fa-solid fa-utensils div-column__icon-footer"></i>
                         <a href="#">Proposer un restaurant</a>
                     </div>
                     <div>
-                        <i class="fa-solid fa-handshake-angle icon-footer"></i>
+                        <i class="fa-solid fa-handshake-angle div-column__icon-footer"></i>
                         <a href="#">Devenir partenaire</a>
                     </div>
                     <a href="#">Mentions lègales</a>

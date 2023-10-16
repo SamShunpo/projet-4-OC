@@ -49,50 +49,70 @@
 
 }
 
+.section-fonctionnement h2 {
+    margin-bottom: 26px;
+}
+
 .section-fonctionnement {
     padding: 48px 20px 68px 20px;
 
     &__grid-fonctionnement {
         @include display-grid;
         gap: 20px;
-
-        &__div-etape {
-            @include display-flex-row;
-            @include shadow;
-            position: relative;
-            justify-content: space-around;
-            align-items: center;
-            background-color: $colorGreyPrincipal;
-            width: 100%;
-            height: 72px;
-            border-radius: 20px;
-
-            &__bloc-info{
-                @include display-flex-row;
-                align-items: center;
-                position: absolute;
-                left: -10px;
-                width: 300px;
-                justify-content: space-between;
-
-                &__number{
-                    @include display-flex-column;
-                    width: 24px;
-                    height: 24px;
-                    background-color: $primaryColor;
-                    border-radius: 300px;
-                    color: $colorWhite;
-                    align-items: center;
-                    justify-content: center;
-                }
-            }
-        }
     }
 }
 
-.section-fonctionnement h2 {
-    margin-bottom: 26px;
+.grid-fonctionnement {
+
+    &__div-etape {
+        @include display-flex-row;
+        @include shadow;
+        position: relative;
+        justify-content: space-around;
+        align-items: center;
+        background-color: $colorGreyPrincipal;
+        width: 100%;
+        height: 72px;
+        border-radius: 20px;
+    }
 }
+
+.div-etape {
+
+    &__bloc-info {
+        @include display-flex-row;
+        align-items: center;
+        position: absolute;
+        left: -10px;
+        width: 100%;
+        justify-content: left;
+        gap: 10%;
+    }
+}
+
+.bloc-info {
+
+    &__number {
+        @include display-flex-column;
+        width: 24px;
+        height: 24px;
+        background-color: $primaryColor;
+        border-radius: 300px;
+        color: $colorWhite;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__icon {
+        width: 25px;
+        color: $iconColor;
+    }
+}
+
+#icon-purple {
+    color: $primaryColor;
+}
+
 
 /*restaurants*/
 
@@ -101,7 +121,7 @@
     background-color: $colorGreyPrincipal;
     padding: 54px 20px 66px 20px;
     gap: 20px;
-    
+
     img {
         height: 231px;
         width: 100%;
