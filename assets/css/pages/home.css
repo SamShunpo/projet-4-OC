@@ -71,29 +71,33 @@ footer .div-column__icon-footer {
   height: 36px;
 }
 
-.card {
+.card-restaurants {
   background-color: white;
   border-radius: 15px;
+  height: 251px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
 }
-
-.div-card-restaurants {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 18px;
+.card-restaurants .div-img {
+  position: relative;
 }
-
-.div-card-restaurants img {
-  height: 231px;
+.card-restaurants .div-img img {
+  height: 174px;
   width: 100%;
   object-fit: cover;
   border-radius: 15px 15px 0 0;
 }
-
-.div-img {
-  position: relative;
+.card-restaurants .div-infos-restaurant {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 13px 33px 12px 16px;
+  align-items: center;
 }
-.div-img__span-tag {
+.card-restaurants .div-infos-restaurant .div-infos-restaurant h3 {
+  margin-bottom: 5px;
+}
+
+.new {
   position: absolute;
   right: 20px;
   top: 20px;
@@ -102,18 +106,6 @@ footer .div-column__icon-footer {
   background-color: #99e2d0;
   color: #008766;
   font-weight: 500;
-}
-
-.div-infos-restaurant {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 13px 33px 12px 16px;
-  align-items: center;
-}
-
-.div-infos-restaurant h3 {
-  margin-bottom: 5px;
 }
 
 /* location */
@@ -213,6 +205,11 @@ footer .div-column__icon-footer {
   background-color: #f6f6f6;
   padding: 54px 20px 66px 20px;
   gap: 20px;
+}
+.section-restaurants .div-bloc-restaurants {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
 }
 
 /*# sourceMappingURL=home.css.map */

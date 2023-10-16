@@ -9,6 +9,7 @@
 @import "../components/heart";
 @import "../components/main-button";
 @import "../components/card";
+@import "../components/new";
 
 
 /* location */
@@ -120,5 +121,13 @@
     background-color: $colorGreyPrincipal;
     padding: 54px 20px 66px 20px;
     gap: 20px;
+
+    .div-bloc-restaurants {
+        @include display-grid;
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
 }
+
+
 
