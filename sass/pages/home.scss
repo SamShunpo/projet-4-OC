@@ -11,6 +11,13 @@
 @import "../components/card";
 @import "../components/new";
 
+/* body */
+
+.div-body {
+    width: 100%;
+    max-width: 1440px;
+}
+
 
 /* location */
 
@@ -126,6 +133,16 @@
         @include display-grid;
         grid-template-columns: 1fr;
         gap: 18px;
+
+        @media (min-width: 768px) {
+            grid-template-columns: 1fr 1fr;
+            row-gap: 50px;
+            column-gap: 6vw;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        padding: 30px 180px 30px 180px;    
     }
 }
 
