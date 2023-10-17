@@ -52,16 +52,6 @@
         text-align: center;
         margin-bottom: 27px;
     }
-
-    &__button {
-        height: 50px;
-        width: 218px;
-        background: linear-gradient($secondaryColor, $primaryColor);
-        color: $colorWhite;
-        border-radius: 25px;
-        border-style: none;
-        @include shadow-btn;
-    }
 }
 
 /*fonctionnement*/
@@ -76,6 +66,10 @@
     .grid-fonctionnement {
         @include display-grid;
         gap: 20px;
+
+        @media (min-width: 768px) {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
     }
 
     .div-etape {
@@ -89,14 +83,18 @@
         height: 72px;
         border-radius: 20px;
 
-       .bloc-info {
+        .bloc-info {
             @include display-flex;
             align-items: center;
             position: absolute;
             left: -10px;
             width: 100%;
             justify-content: left;
-            gap: 10%;
+            gap: 14%;
+
+            p {
+                font-weight: 500;
+            }
 
             &__number {
                 @include display-flex(column);
@@ -108,7 +106,7 @@
                 align-items: center;
                 justify-content: center;
             }
-        
+
             &__icon {
                 width: 25px;
                 color: $iconColor;
@@ -118,6 +116,10 @@
                 color: $primaryColor;
             }
         }
+    }
+
+    @media (min-width: 1024px) {
+        padding: 50px 180px 50px 180px;
     }
 }
 
@@ -142,9 +144,6 @@
     }
 
     @media (min-width: 1024px) {
-        padding: 30px 180px 30px 180px;    
+        padding: 30px 180px 30px 180px;
     }
 }
-
-
-

@@ -40,23 +40,21 @@ footer {
         }
 
 
-        &__icon-footer{
+        &__icon-footer {
             width: 12px;
             margin-right: 10px;
         }
 
         @media (min-width: 768px) {
             @include display-flex;
-            padding : 25px 0 25px 0;
+            padding: 25px 0 25px 0;
         }
     }
 
     @media (min-width: 1024px) {
-        @include display-flex; 
+        @include display-flex;
         flex-direction: row-reverse;
         height: 114px;
         align-items: end;
     }
 }
-
-

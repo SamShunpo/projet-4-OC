@@ -13,7 +13,8 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-h2, h1 {
+h2,
+h1 {
   margin: 0;
   color: #000000;
 }
@@ -107,6 +108,17 @@ footer .div-column__icon-footer {
   height: 36px;
 }
 
+.main-button {
+  font-size: 16px;
+  height: 50px;
+  width: 218px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  color: white;
+  border-radius: 25px;
+  border-style: none;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
 .card-restaurants {
   background-color: white;
   border-radius: 15px;
@@ -182,15 +194,6 @@ footer .div-column__icon-footer {
   text-align: center;
   margin-bottom: 27px;
 }
-.section-hero__button {
-  height: 50px;
-  width: 218px;
-  background: linear-gradient(#FF79DA, #9356DC);
-  color: white;
-  border-radius: 25px;
-  border-style: none;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-}
 
 /*fonctionnement*/
 .section-fonctionnement {
@@ -202,6 +205,11 @@ footer .div-column__icon-footer {
 .section-fonctionnement .grid-fonctionnement {
   display: grid;
   gap: 20px;
+}
+@media (min-width: 768px) {
+  .section-fonctionnement .grid-fonctionnement {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 .section-fonctionnement .div-etape {
   display: flex;
@@ -223,7 +231,10 @@ footer .div-column__icon-footer {
   left: -10px;
   width: 100%;
   justify-content: left;
-  gap: 10%;
+  gap: 14%;
+}
+.section-fonctionnement .div-etape .bloc-info p {
+  font-weight: 500;
 }
 .section-fonctionnement .div-etape .bloc-info__number {
   display: flex;
@@ -242,6 +253,11 @@ footer .div-column__icon-footer {
 }
 .section-fonctionnement .div-etape .bloc-info #icon-purple {
   color: #9356DC;
+}
+@media (min-width: 1024px) {
+  .section-fonctionnement {
+    padding: 50px 180px 50px 180px;
+  }
 }
 
 /*restaurants*/
