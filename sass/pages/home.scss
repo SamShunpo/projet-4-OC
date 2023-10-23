@@ -11,14 +11,6 @@
 @import "../components/card";
 @import "../components/new";
 
-/* body */
-
-.div-body {
-    width: 100%;
-    max-width: 1440px;
-}
-
-
 /* location */
 
 .section-location {
@@ -98,7 +90,7 @@
 
             &__number {
                 @include display-flex(column);
-                width: 24px;
+                min-width: 24px;
                 height: 24px;
                 background-color: $primaryColor;
                 border-radius: 300px;
@@ -117,19 +109,19 @@
             }
         }
     }
-
-    @media (min-width: 1024px) {
-        padding: 50px 180px 50px 180px;
-    }
 }
 
 /*restaurants*/
 
 .section-restaurants {
-    @include display-flex(column);
     background-color: $colorGreyPrincipal;
-    padding: 54px 20px 66px 20px;
-    gap: 20px;
+
+
+    .div-section-restaurant{
+        @include display-flex(column);
+        padding: 54px 20px 66px 20px;
+        gap: 20px;
+    }
 
     .div-bloc-restaurants {
         @include display-grid;
@@ -141,9 +133,5 @@
             row-gap: 50px;
             column-gap: 6vw;
         }
-    }
-
-    @media (min-width: 1024px) {
-        padding: 30px 180px 30px 180px;
     }
 }

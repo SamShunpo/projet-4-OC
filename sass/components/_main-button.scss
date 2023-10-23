@@ -2,9 +2,14 @@
     font-size: 16px;
     height: 50px;
     width: 218px;
-    background: linear-gradient($secondaryColor, $primaryColor);
+    background: $btn-linear-gradient;
     color: $colorWhite;
     border-radius: 25px;
     border-style: none;
-    @include shadow-btn;
+    box-shadow: 0px 4px 10px rgba(#000000, 0.25);
+    transition: box-shadow 2000ms;
+
+    &:hover {
+        box-shadow: 0px 4px 15px rgba(#000000, 0.35);
+    }
 }
