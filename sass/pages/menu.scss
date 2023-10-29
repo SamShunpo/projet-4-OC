@@ -11,9 +11,71 @@
 @import "../components/card";
 @import "../components/new";
 
+
+/* Main */
+
+.bg-colour {
+    background-color: $colorGreyPrincipal;
+}
+
 /* Hero */
 
 .hero {
     height: 275px;
+    width: 100%;
     object-fit: cover;
+}
+
+/* Menu */
+
+.menu {
+    @include display-flex(column);
+    align-items: center;
+    background-color: $colorGreyPrincipal;
+    border-radius: 30px 30px 0 0 ;
+    padding: 32px 13px 0px 13px;
+    position: relative;
+    bottom: 40px;
+    gap: 40px;
+
+    .div-h1{
+        @include display-flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 310px;
+
+        .div-h1, h1{
+        @include shrikhand;
+        font-size: 28px;
+        font-weight: 400;
+        }
+    }
+
+    .menu, h2 {
+        font-weight: 300;
+        font-size: 16px;
+        height: 27px;
+    }
+
+    .menu, hr {
+        border-color: $greenColor;
+        width: 40px;
+        position: absolute;
+        margin: auto;
+    }
+
+    .menu, ul {
+        margin: 8px 0 0 0;
+        padding-inline-start: 0;
+        @include display-flex(column);
+        gap: 8px;
+    }
+
+    .menu, li {
+        list-style: none;
+        background-color: $colorWhite;
+        min-width: 320px;
+        border-radius: 15px;
+        padding: 13px 20px 13px 20px;
+    }
 }

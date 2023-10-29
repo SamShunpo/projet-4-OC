@@ -169,10 +169,67 @@ footer .div-column__icon-footer {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
 }
 
+/* Main */
+.bg-colour {
+  background-color: #f6f6f6;
+}
+
 /* Hero */
 .hero {
   height: 275px;
+  width: 100%;
   object-fit: cover;
+}
+
+/* Menu */
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f6f6f6;
+  border-radius: 30px 30px 0 0;
+  padding: 32px 13px 0px 13px;
+  position: relative;
+  bottom: 40px;
+  gap: 40px;
+}
+.menu .div-h1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 310px;
+}
+.menu .div-h1 .div-h1, .menu .div-h1 h1 {
+  font-family: "Shrikhand", cursive;
+  font-size: 28px;
+  font-weight: 400;
+}
+.menu .menu, .menu h2 {
+  font-weight: 300;
+  font-size: 16px;
+  height: 27px;
+}
+.menu .menu, .menu hr {
+  border-color: #99e2d0;
+  width: 40px;
+  position: absolute;
+  margin: auto;
+}
+.menu .menu, .menu ul {
+  margin: 8px 0 0 0;
+  padding-inline-start: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+.menu .menu, .menu li {
+  list-style: none;
+  background-color: white;
+  min-width: 320px;
+  border-radius: 15px;
+  padding: 13px 20px 13px 20px;
 }
 
 /*# sourceMappingURL=menu.css.map */
