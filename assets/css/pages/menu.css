@@ -222,7 +222,6 @@ footer .div-column__icon-footer {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  width: 100%;
 }
 .menu .menu, .menu li {
   list-style: none;
