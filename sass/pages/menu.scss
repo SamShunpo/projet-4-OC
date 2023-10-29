@@ -1,0 +1,19 @@
+@import "../utils/variables";
+@import "../mixins/mixins-font";
+@import "../mixins/mixins-margin";
+@import "../mixins/mixins-display";
+@import "../mixins/mixins-shadow";
+@import "../utils/general";
+@import "../components/footer";
+@import "../components/header";
+@import "../components/heart";
+@import "../components/main-button";
+@import "../components/card";
+@import "../components/new";
+
+/* Hero */
+
+.hero {
+    height: 275px;
+    object-fit: cover;
+}
