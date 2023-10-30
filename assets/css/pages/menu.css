@@ -222,6 +222,9 @@ footer .div-column__icon-footer {
   margin-bottom: -40px;
   gap: 40px;
 }
+.menu .fa-sharp {
+  color: white;
+}
 .menu .div-h1 {
   display: flex;
   flex-direction: row;
@@ -229,69 +232,110 @@ footer .div-column__icon-footer {
   justify-content: space-between;
   width: 310px;
 }
-.menu .div-h1 .div-h1, .menu .div-h1 h1 {
+.menu .div-h1 .div-h1,
+.menu .div-h1 h1 {
   font-family: "Shrikhand", cursive;
   font-size: 28px;
   font-weight: 400;
 }
-.menu .menu, .menu article {
+.menu .menu,
+.menu article {
   width: 100%;
   max-width: 634px;
 }
-.menu .menu, .menu h2 {
+.menu .menu,
+.menu h2 {
   font-weight: 300;
   font-size: 16px;
   height: 27px;
 }
-.menu .menu, .menu hr {
+.menu .menu,
+.menu hr {
   border-color: #99e2d0;
   width: 40px;
   position: absolute;
   margin: auto;
 }
-.menu .menu, .menu ul {
+.menu .menu,
+.menu ul {
   margin: 12px 0 0 0;
   padding-inline-start: 0;
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
-.menu .menu, .menu li {
+.menu .menu,
+.menu li {
+  list-style: none;
+}
+.menu .menu .menu-plat,
+.menu li .menu-plat {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: end;
-  list-style: none;
-  background-color: white;
-  border-radius: 15px;
-  padding: 13px 20px 13px 20px;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
 }
-.menu .menu__div, .menu li__div {
+.menu .menu .menu-plat__div,
+.menu li .menu-plat__div {
   display: flex;
   flex-direction: column;
+  background-color: white;
+  border-radius: 15px;
+  width: 100%;
+  margin-right: -65px;
+  padding: 15px 0px 15px 15px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   gap: 5px;
   white-space: nowrap;
   overflow: hidden;
-  margin-right: 10px;
 }
-.menu .menu__div__div, .menu .menu__div h3, .menu li__div__div, .menu li__div h3 {
+.menu .menu .menu-plat__div__div,
+.menu .menu .menu-plat__div h3,
+.menu li .menu-plat__div__div,
+.menu li .menu-plat__div h3 {
   font-size: 18px;
   font-weight: 500;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.menu .menu__div__div, .menu .menu__div p, .menu li__div__div, .menu li__div p {
+.menu .menu .menu-plat__div__div,
+.menu .menu .menu-plat__div p,
+.menu li .menu-plat__div__div,
+.menu li .menu-plat__div p {
   font-size: 15px;
   font-weight: 300;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.menu .menu .menu, .menu .menu p, .menu li .menu, .menu li p {
+.menu .menu .menu-plat__price,
+.menu li .menu-plat__price {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  gap: 15px;
+}
+.menu .menu .menu-plat__price__price,
+.menu .menu .menu-plat__price p,
+.menu li .menu-plat__price__price,
+.menu li .menu-plat__price p {
   font-size: 15px;
   font-weight: 700;
+  margin-bottom: 15px;
+}
+.menu .menu .menu-plat__price__price,
+.menu .menu .menu-plat__price i,
+.menu li .menu-plat__price__price,
+.menu li .menu-plat__price i {
+  display: flex;
+  flex-direction: row;
+  font-size: 22px;
+  align-items: center;
+  justify-content: center;
+  background-color: #99e2d0;
+  border-radius: 0 15px 15px 0;
+  width: 59px;
+  height: 100%;
+  overflow: hidden;
 }
 
 /*# sourceMappingURL=menu.css.map */

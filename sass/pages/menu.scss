@@ -27,84 +27,119 @@
     @include display-flex(column);
     align-items: center;
     background-color: $colorGreyPrincipal;
-    border-radius: 30px 30px 0 0 ;
+    border-radius: 30px 30px 0 0;
     padding: 32px 13px 40px 13px;
     position: relative;
     bottom: 40px;
     margin-bottom: -40px;
     gap: 40px;
 
-    .div-h1{
+    .fa-sharp {
+        color: $colorWhite;
+    }
+
+    .div-h1 {
         @include display-flex;
         align-items: center;
         justify-content: space-between;
         width: 310px;
 
-        .div-h1, h1{
-        @include shrikhand;
-        font-size: 28px;
-        font-weight: 400;
+        .div-h1,
+        h1 {
+            @include shrikhand;
+            font-size: 28px;
+            font-weight: 400;
         }
     }
 
-    .menu, article {
+    .menu,
+    article {
         width: 100%;
         max-width: 634px;
     }
 
-    .menu, h2 {
+    .menu,
+    h2 {
         font-weight: 300;
         font-size: 16px;
         height: 27px;
     }
 
-    .menu, hr {
+    .menu,
+    hr {
         border-color: $greenColor;
         width: 40px;
         position: absolute;
         margin: auto;
     }
 
-    .menu, ul {
+    .menu,
+    ul {
         margin: 12px 0 0 0;
         padding-inline-start: 0;
         @include display-flex(column);
         gap: 12px;
     }
 
-    .menu, li {
-        @include display-flex;
-        justify-content: space-between;
-        align-items: end;
+    .menu,
+    li {
         list-style: none;
-        background-color: $colorWhite;
-        border-radius: 15px;
-        padding: 13px 20px 13px 20px;
-        @include shadow;
 
-        &__div {
-            @include display-flex (column);
-            gap: 5px;
-            white-space: nowrap;
-            overflow: hidden;
-            margin-right: 10px;
+        .menu-plat {
+            @include display-flex;
 
-            &__div, h3 {
-                @include font-size (18px);
-                @include font-weight (500);
-                @include ellipsis;
+            &__div {
+                @include display-flex (column);
+                background-color: $colorWhite;
+                border-radius: 15px;
+                width: 100%;
+                margin-right: -65px;
+                padding: 15px 0px 15px 15px;
+                @include shadow;
+                gap: 5px;
+                white-space: nowrap;
+                overflow: hidden;
+
+                &__div,
+                h3 {
+                    @include font-size (18px);
+                    @include font-weight (500);
+                    @include ellipsis;
+                }
+
+                &__div,
+                p {
+                    @include font-size (15px);
+                    @include font-weight (300);
+                    @include ellipsis;
+                }
             }
 
-            &__div, p {
-                @include font-size (15px);
-                @include font-weight (300);
-                @include ellipsis;
-            }
-        }
+            &__price {
+                @include display-flex;
+                align-items: end;
+                gap: 15px;
 
-        .menu, p {
-            @include font-size (15px);
-            @include font-weight (700);
+                &__price,
+                p {
+                    @include font-size (15px);
+                    @include font-weight (700);
+                    margin-bottom: 15px;
+                }
+
+                &__price,
+                i {
+                    @include display-flex;
+                    font-size: 22px;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: $greenColor;
+                    border-radius: 0 15px 15px 0;
+                    width: 59px;
+                    height: 100%;
+                    overflow: hidden;
+                }
+            }
         }
     }
 }
