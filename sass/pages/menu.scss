@@ -12,16 +12,11 @@
 @import "../components/new";
 
 
-/* Main */
-
-.bg-colour {
-    background-color: $colorGreyPrincipal;
-}
-
 /* Hero */
 
 .hero {
-    height: 275px;
+    min-height: 275px;
+    max-height: 383px;
     width: 100%;
     object-fit: cover;
 }
@@ -33,9 +28,10 @@
     align-items: center;
     background-color: $colorGreyPrincipal;
     border-radius: 30px 30px 0 0 ;
-    padding: 32px 13px 0px 13px;
+    padding: 32px 13px 40px 13px;
     position: relative;
     bottom: 40px;
+    margin-bottom: -40px;
     gap: 40px;
 
     .div-h1{
@@ -49,6 +45,11 @@
         font-size: 28px;
         font-weight: 400;
         }
+    }
+
+    .menu, article {
+        width: 100%;
+        max-width: 634px;
     }
 
     .menu, h2 {
@@ -65,17 +66,40 @@
     }
 
     .menu, ul {
-        margin: 8px 0 0 0;
+        margin: 12px 0 0 0;
         padding-inline-start: 0;
         @include display-flex(column);
-        gap: 8px;
+        gap: 12px;
     }
 
     .menu, li {
+        @include display-flex;
+        justify-content: space-between;
+        align-items: end;
         list-style: none;
         background-color: $colorWhite;
-        min-width: 320px;
         border-radius: 15px;
         padding: 13px 20px 13px 20px;
+        @include shadow;
+
+        &__div {
+            @include display-flex (column);
+            gap: 5px;
+
+            &__div, h3 {
+                @include font-size (18px);
+                @include font-weight (500);
+            }
+
+            &__div, p {
+                @include font-size (15px);
+                @include font-weight (300);
+            }
+        }
+
+        .menu, p {
+            @include font-size (15px);
+            @include font-weight (700);
+        }
     }
 }
