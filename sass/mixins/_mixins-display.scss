@@ -16,3 +16,12 @@
 @mixin inline-block {
     display: inline-block;
 }
+
+
+/* ellipsis */
+
+@mixin ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

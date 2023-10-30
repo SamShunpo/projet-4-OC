@@ -85,15 +85,20 @@
         &__div {
             @include display-flex (column);
             gap: 5px;
+            white-space: nowrap;
+            overflow: hidden;
+            margin-right: 10px;
 
             &__div, h3 {
                 @include font-size (18px);
                 @include font-weight (500);
+                @include ellipsis;
             }
 
             &__div, p {
                 @include font-size (15px);
                 @include font-weight (300);
+                @include ellipsis;
             }
         }
 

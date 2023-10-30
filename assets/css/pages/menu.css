@@ -1,6 +1,7 @@
 /* flex */
 /* grid */
 /* inline-block */
+/* ellipsis */
 head, body {
   margin: 0;
   padding: 0;
@@ -124,11 +125,13 @@ footer .div-column__icon-footer {
   color: white;
   border-radius: 25px;
   border-style: none;
+  filter: brightness(1);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-  transition: box-shadow 2000ms;
+  transition: all 300ms;
 }
 .main-button:hover {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+  filter: brightness(1.1);
 }
 
 .card-restaurants {
@@ -239,14 +242,23 @@ footer .div-column__icon-footer {
   display: flex;
   flex-direction: column;
   gap: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-right: 10px;
 }
 .menu .menu__div__div, .menu .menu__div h3, .menu li__div__div, .menu li__div h3 {
   font-size: 18px;
   font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu .menu__div__div, .menu .menu__div p, .menu li__div__div, .menu li__div p {
   font-size: 15px;
   font-weight: 300;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu .menu .menu, .menu .menu p, .menu li .menu, .menu li p {
   font-size: 15px;
