@@ -1,0 +1,35 @@
+.heart-container {
+
+    position: relative;
+
+    *{
+        font-size: 22px;
+    }
+
+    .fa-regular{
+        padding: 3px;
+        opacity: 1;
+        transition: opacity 0.5s;
+    }
+
+    .fa-solid{
+        position: absolute;
+        left: 0;
+        padding: 3px;
+        -webkit-background-clip: text !important;
+        -webkit-text-fill-color: transparent;
+        background: $btn-linear-gradient;
+        opacity: 0;
+        transition: opacity 2s;
+    }
+
+    &:hover{
+        .fa-solid {
+            opacity:1;
+        }
+        .fa-regular {
+            opacity:0;
+        }
+    }
+}
+    

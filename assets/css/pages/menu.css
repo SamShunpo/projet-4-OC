@@ -117,6 +117,34 @@ footer .div-column__icon-footer {
   height: 36px;
 }
 
+.heart-container {
+  position: relative;
+}
+.heart-container * {
+  font-size: 22px;
+}
+.heart-container .fa-regular {
+  padding: 3px;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+.heart-container .fa-solid {
+  position: absolute;
+  left: 0;
+  padding: 3px;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(0deg, #9356DC -11.44%, #FF79DA 123.93%);
+  opacity: 0;
+  transition: opacity 2s;
+}
+.heart-container:hover .fa-solid {
+  opacity: 1;
+}
+.heart-container:hover .fa-regular {
+  opacity: 0;
+}
+
 .main-button {
   font-size: 16px;
   height: 50px;
@@ -132,6 +160,7 @@ footer .div-column__icon-footer {
 .main-button:hover {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
   filter: brightness(1.1);
+  cursor: pointer;
 }
 
 .card-restaurants {
