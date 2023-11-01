@@ -91,6 +91,7 @@
         width: 100%;
         @include shadow;
         gap: 5px;
+        overflow: hidden;
 
 
         &__div {
@@ -135,16 +136,15 @@
                 justify-content: center;
                 background-color: $greenColor;
                 border-radius: 0 15px 15px 0;
-                width: 0px;
                 height: 100%;
-                opacity: 0;
-                transition: width 400ms;
+                width:59px;
+                margin-right: -59px;
+                transition: margin-right 400ms;
             }
         }
 
         &:hover i {
-            opacity: 1;
-            width: 59px;
+            margin-right: 0px;
         }
     }
 }
