@@ -266,66 +266,64 @@ footer .div-column__icon-footer {
 }
 .menu .menu,
 .menu li {
-  list-style: none;
-}
-.menu .menu .menu-plat,
-.menu li .menu-plat {
   display: flex;
   flex-direction: row;
-}
-.menu .menu .menu-plat__div,
-.menu li .menu-plat__div {
-  display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  list-style: none;
   background-color: white;
   border-radius: 15px;
   width: 100%;
-  margin-right: -65px;
-  padding: 15px 0px 15px 15px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  gap: 5px;
+}
+.menu .menu__div,
+.menu li__div {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 0 15px 15px;
   gap: 5px;
   white-space: nowrap;
   overflow: hidden;
 }
-.menu .menu .menu-plat__div__div,
-.menu .menu .menu-plat__div h3,
-.menu li .menu-plat__div__div,
-.menu li .menu-plat__div h3 {
+.menu .menu__div__div,
+.menu .menu__div h3,
+.menu li__div__div,
+.menu li__div h3 {
   font-size: 18px;
   font-weight: 500;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.menu .menu .menu-plat__div__div,
-.menu .menu .menu-plat__div p,
-.menu li .menu-plat__div__div,
-.menu li .menu-plat__div p {
+.menu .menu__div__div,
+.menu .menu__div p,
+.menu li__div__div,
+.menu li__div p {
   font-size: 15px;
   font-weight: 300;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.menu .menu .menu-plat__price,
-.menu li .menu-plat__price {
+.menu .menu__price,
+.menu li__price {
   display: flex;
   flex-direction: row;
   align-items: end;
   gap: 15px;
 }
-.menu .menu .menu-plat__price__price,
-.menu .menu .menu-plat__price p,
-.menu li .menu-plat__price__price,
-.menu li .menu-plat__price p {
+.menu .menu__price__price,
+.menu .menu__price p,
+.menu li__price__price,
+.menu li__price p {
   font-size: 15px;
   font-weight: 700;
   margin-bottom: 15px;
 }
-.menu .menu .menu-plat__price__price,
-.menu .menu .menu-plat__price i,
-.menu li .menu-plat__price__price,
-.menu li .menu-plat__price i {
+.menu .menu__price__price,
+.menu .menu__price i,
+.menu li__price__price,
+.menu li__price i {
   display: flex;
   flex-direction: row;
   font-size: 22px;
@@ -333,9 +331,15 @@ footer .div-column__icon-footer {
   justify-content: center;
   background-color: #99e2d0;
   border-radius: 0 15px 15px 0;
-  width: 59px;
+  width: 0px;
   height: 100%;
-  overflow: hidden;
+  opacity: 0;
+  transition: width 400ms;
+}
+.menu .menu:hover i,
+.menu li:hover i {
+  opacity: 1;
+  width: 59px;
 }
 
 /*# sourceMappingURL=menu.css.map */
