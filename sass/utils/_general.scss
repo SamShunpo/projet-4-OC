@@ -5,6 +5,10 @@ head, body {
     height: 100%;
 }
 
+html {
+  scroll-behavior: smooth;  
+}
+
 .body{
     animation: body 1s 3s backwards;
 }

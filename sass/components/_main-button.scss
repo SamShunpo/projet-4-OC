@@ -15,4 +15,8 @@
         filter: brightness(1.1);
         cursor: pointer;
     }
+
+    .main-button, a {
+        color: $colorWhite;
+    }
 }
