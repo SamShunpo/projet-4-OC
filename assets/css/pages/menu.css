@@ -169,7 +169,9 @@ footer .div-column__icon-footer {
 }
 
 .heart-container {
-  position: relative;
+  position: absolute;
+  right: 21px;
+  bottom: 22px;
 }
 .heart-container * {
   font-size: 22px;
@@ -231,6 +233,11 @@ footer .div-column__icon-footer {
   border-radius: 15px;
   height: 251px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: all 400ms;
+}
+.card-restaurants:hover {
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
 }
 .card-restaurants .div-img {
   position: relative;
