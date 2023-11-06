@@ -1,7 +1,7 @@
 .heart-container {
     position: absolute;
-    right: 21px;
-    bottom: 22px;
+    right: 25px;
+    bottom: 33px;
 
     *{
         font-size: 22px;
@@ -34,4 +34,9 @@
             opacity:0;
         }
     }
+}
+
+.heart-container-menu {
+    right: 5px;
+    bottom: 6px;
 }
