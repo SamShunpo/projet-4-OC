@@ -199,7 +199,16 @@ footer .div-column__icon-footer {
   opacity: 0;
 }
 
+/* flex */
+/* grid */
+/* inline-block */
+/* ellipsis */
 .main-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
   font-size: 16px;
   height: 50px;
   width: 218px;
@@ -215,9 +224,6 @@ footer .div-column__icon-footer {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
   filter: brightness(1.1);
   cursor: pointer;
-}
-.main-button .main-button, .main-button a {
-  color: white;
 }
 
 .card-restaurants {
