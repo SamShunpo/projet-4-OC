@@ -1,6 +1,7 @@
 .heart-container {
-
-    position: relative;
+    position: absolute;
+    right: 21px;
+    bottom: 22px;
 
     *{
         font-size: 22px;
@@ -10,6 +11,7 @@
         padding: 3px;
         opacity: 1;
         transition: opacity 0.5s;
+
     }
 
     .fa-solid{
@@ -33,4 +35,3 @@
         }
     }
 }
-    

@@ -3,6 +3,12 @@
     border-radius: 15px;
     height: 251px;
     @include shadow;
+    position: relative;
+    transition: all 400ms;
+
+    &:hover {
+        @include shadow-btn-hover;
+    }
 
     .div-img {
         position: relative;
