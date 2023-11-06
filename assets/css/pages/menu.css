@@ -333,6 +333,9 @@ footer .div-column__icon-footer {
 .menu__plat--3 {
   animation-delay: 1200ms;
 }
+.menu__plat--4 {
+  animation-delay: 1600ms;
+}
 .menu__plat__div {
   display: flex;
   flex-direction: column;

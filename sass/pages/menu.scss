@@ -93,7 +93,7 @@
         gap: 5px;
         overflow: hidden;
         animation: menu 1s backwards;
-        @for $i from 1 through 3 {
+        @for $i from 1 through 4 {
             &--#{$i} {
                 animation-delay: 400ms * $i;
             }
