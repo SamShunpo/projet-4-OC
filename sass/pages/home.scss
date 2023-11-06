@@ -1,4 +1,5 @@
 @import "../utils/variables";
+@import "../utils/keyframes";
 @import "../mixins/mixins-font";
 @import "../mixins/mixins-margin";
 @import "../mixins/mixins-display";
@@ -11,6 +12,43 @@
 @import "../components/card";
 @import "../components/new";
 
+
+/* loader */
+
+.page-loader {
+    @include display-flex(column);
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+    padding: 20px;
+    height: 50vh;
+    animation: page-loader 1s 2s both;
+
+    &__title {
+        width: 20em;
+    }
+}
+
+.div-loader{
+
+@include display-flex;
+justify-content: center;
+width: 20em;
+gap: 50px;
+
+    &__loader {
+        border-radius: 300px;
+        background-color: $primaryColor;
+        width: 60px;
+        height: 60px;
+        animation: loader 0.5s both alternate-reverse infinite;
+        @for $i from 1 through 3 {
+            &--#{$i} {
+                animation-delay: 100ms * $i;
+            }
+        }
+    }
+}
 /* location */
 
 .section-location {

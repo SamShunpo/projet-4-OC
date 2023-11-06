@@ -9,6 +9,10 @@ head, body {
   height: 100%;
 }
 
+.body {
+  animation: body 1s 3s backwards;
+}
+
 * {
   font-family: "Roboto", sans-serif;
 }
