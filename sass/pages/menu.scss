@@ -1,4 +1,5 @@
 @import "../utils/variables";
+@import "../utils/keyframes";
 @import "../mixins/mixins-font";
 @import "../mixins/mixins-margin";
 @import "../mixins/mixins-display";
@@ -81,8 +82,7 @@
         gap: 12px;
     }
 
-    .menu,
-    li {
+    &__plat {
         @include display-flex;
         justify-content: space-between;
         list-style: none;
@@ -92,6 +92,12 @@
         @include shadow;
         gap: 5px;
         overflow: hidden;
+        animation: menu 1s backwards;
+        @for $i from 1 through 3 {
+            &--#{$i} {
+                animation-delay: 400ms * $i;
+            }
+        }
 
 
         &__div {

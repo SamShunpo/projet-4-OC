@@ -1,5 +1,7 @@
 @import "../mixins/mixins-display";
 
+/* home */
+
 @keyframes body {
     from {
         display: none;
@@ -33,5 +35,18 @@
 
     100% {
         transform: scale(1);
+    }
+}
+
+
+/*menu*/
+
+@keyframes menu {
+    from {
+        transform: scale3d(0,0,0);
+    }
+
+    to {
+        transform: scale3d(1,1,1);
     }
 }
