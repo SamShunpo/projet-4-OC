@@ -170,8 +170,8 @@ footer .div-column__icon-footer {
 
 .heart-container {
   position: absolute;
-  right: 21px;
-  bottom: 22px;
+  right: 25px;
+  bottom: 33px;
 }
 .heart-container * {
   font-size: 22px;
@@ -199,6 +199,11 @@ footer .div-column__icon-footer {
 }
 .heart-container:hover .fa-regular {
   opacity: 0;
+}
+
+.heart-container-menu {
+  right: 5px;
+  bottom: 6px;
 }
 
 /* flex */
@@ -296,6 +301,7 @@ footer .div-column__icon-footer {
   color: white;
 }
 .menu .div-h1 {
+  position: relative;
   display: flex;
   flex-direction: row;
   align-items: center;
