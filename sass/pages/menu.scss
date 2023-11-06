@@ -53,10 +53,15 @@
         }
     }
 
-    .menu,
-    article {
+    &__article {
         width: 100%;
         max-width: 634px;
+        animation: menu 1s backwards;
+        @for $i from 1 through 3 {
+            &--#{$i} {
+                animation-delay: 400ms * $i;
+            }
+        }
     }
 
     .menu,
@@ -82,7 +87,8 @@
         gap: 12px;
     }
 
-    &__plat {
+    .menu, 
+    li {
         @include display-flex;
         justify-content: space-between;
         list-style: none;
@@ -92,12 +98,7 @@
         @include shadow;
         gap: 5px;
         overflow: hidden;
-        animation: menu 1s backwards;
-        @for $i from 1 through 4 {
-            &--#{$i} {
-                animation-delay: 400ms * $i;
-            }
-        }
+
 
 
         &__div {
