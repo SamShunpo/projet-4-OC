@@ -301,10 +301,19 @@ footer .div-column__icon-footer {
   font-size: 28px;
   font-weight: 400;
 }
-.menu .menu,
-.menu article {
+.menu__article {
   width: 100%;
   max-width: 634px;
+  animation: menu 1s backwards;
+}
+.menu__article--1 {
+  animation-delay: 400ms;
+}
+.menu__article--2 {
+  animation-delay: 800ms;
+}
+.menu__article--3 {
+  animation-delay: 1200ms;
 }
 .menu .menu,
 .menu h2 {
@@ -327,7 +336,8 @@ footer .div-column__icon-footer {
   flex-direction: column;
   gap: 12px;
 }
-.menu__plat {
+.menu .menu,
+.menu li {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -338,21 +348,9 @@ footer .div-column__icon-footer {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   gap: 5px;
   overflow: hidden;
-  animation: menu 1s backwards;
 }
-.menu__plat--1 {
-  animation-delay: 400ms;
-}
-.menu__plat--2 {
-  animation-delay: 800ms;
-}
-.menu__plat--3 {
-  animation-delay: 1200ms;
-}
-.menu__plat--4 {
-  animation-delay: 1600ms;
-}
-.menu__plat__div {
+.menu .menu__div,
+.menu li__div {
   display: flex;
   flex-direction: column;
   padding: 15px 0 15px 15px;
@@ -360,36 +358,45 @@ footer .div-column__icon-footer {
   white-space: nowrap;
   overflow: hidden;
 }
-.menu__plat__div__div,
-.menu__plat__div h3 {
+.menu .menu__div__div,
+.menu .menu__div h3,
+.menu li__div__div,
+.menu li__div h3 {
   font-size: 18px;
   font-weight: 500;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.menu__plat__div__div,
-.menu__plat__div p {
+.menu .menu__div__div,
+.menu .menu__div p,
+.menu li__div__div,
+.menu li__div p {
   font-size: 15px;
   font-weight: 300;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.menu__plat__price {
+.menu .menu__price,
+.menu li__price {
   display: flex;
   flex-direction: row;
   align-items: end;
   gap: 15px;
 }
-.menu__plat__price__price,
-.menu__plat__price p {
+.menu .menu__price__price,
+.menu .menu__price p,
+.menu li__price__price,
+.menu li__price p {
   font-size: 15px;
   font-weight: 700;
   margin-bottom: 15px;
 }
-.menu__plat__price__price,
-.menu__plat__price i {
+.menu .menu__price__price,
+.menu .menu__price i,
+.menu li__price__price,
+.menu li__price i {
   display: flex;
   flex-direction: row;
   font-size: 22px;
@@ -402,7 +409,8 @@ footer .div-column__icon-footer {
   margin-right: -59px;
   transition: margin-right 400ms;
 }
-.menu__plat:hover i {
+.menu .menu:hover i,
+.menu li:hover i {
   margin-right: 0px;
 }
 
